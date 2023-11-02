@@ -5,14 +5,26 @@
  */
 package biblioteca24;
 
+import biblioteca24.Entidades.Categoria;
+import biblioteca24.Entidades.Ejemplar;
+import biblioteca24.Entidades.EstadoEjemplar;
+import biblioteca24.Entidades.Lector;
 import biblioteca24.Entidades.Libro;
+import biblioteca24.Entidades.Prestamo;
 import biblioteca24.accesoADatos.Conexion;
+import biblioteca24.accesoADatos.EjemplarData;
+import biblioteca24.accesoADatos.LectorData;
 import biblioteca24.accesoADatos.LibroData;
+import biblioteca24.accesoADatos.PrestamoData;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,35 +33,7 @@ import java.util.logging.Logger;
 public class Biblioteca24 {
 
     public static void main(String[] args) {
-       //Guardar libro
-         LibroData lb = new LibroData();
-//         Libro libro = new Libro("asdafasf", "Maria Elena Walsh", 1965, "Infantil", "niidea", true);
-//         lb.guardarLibro(libro);
-      //--------------
-      //Modificar libro
-//       lb.modificarLibro(libro);
-     //Buscar libro
-       /* Libro libroencontrado = lb.buscarLibro("Manuelita");
-        System.out.println("autor: "+ libroencontrado.getAutor());
-        System.out.println("año: "+ libroencontrado.getAnio());
-        System.out.println("tipo: "+ libroencontrado.getTipo());
-        System.out.println("editorial: "+ libroencontrado.getEditorial());
-        System.out.println("estado: "+ libroencontrado.isEstado());*/
-       
-    //Lista libros
-    /*    for (Libro libro : lb.listarLibros()) {
-            System.out.println(libro.getIsbn());
-            System.out.println(libro.getTitulo());
-            System.out.println(libro.getAutor());
-            System.out.println(libro.getAnio());
-        } */
-    //Busqueda por autor 
-    List<Libro> librosporA = lb.busquedaPorAutor("Maria Elena Walsh");
-        for (Libro libro : librosporA) {
-            System.out.println("isbn: "+ libro.getIsbn());
-            System.out.println("titulo: "+libro.getTitulo());
-            System.out.println("año: "+ libro.getAnio());
-        }
+     
    }
     
 }

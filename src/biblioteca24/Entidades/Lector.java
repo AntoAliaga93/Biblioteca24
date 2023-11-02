@@ -7,24 +7,26 @@ public class Lector {
     private String nombre;
     private int dni;
     private String domicilio;
-    private int telefono;
+    private String telefono;
     private String email;
+    private String password;
     private boolean estado;
 
     public Lector() {
     }
 
-    public Lector(String apellido, String nombre, int dni, String domicilio, int telefono, String email, boolean estado) {
+    public Lector(String apellido, String nombre, int dni, String domicilio, String telefono, String email, String password, boolean estado) {
         this.apellido = apellido;
         this.nombre = nombre;
         this.dni = dni;
         this.domicilio = domicilio;
         this.telefono = telefono;
         this.email = email;
+        this.password = password;
         this.estado = estado;
     }
 
-    public Lector(int nroSocio, String apellido, String nombre, int dni, String domicilio, int telefono, String email, boolean estado) {
+    public Lector(int nroSocio, String apellido, String nombre, int dni, String domicilio, String telefono, String email, String password, boolean estado) {
         this.nroSocio = nroSocio;
         this.apellido = apellido;
         this.nombre = nombre;
@@ -32,6 +34,7 @@ public class Lector {
         this.domicilio = domicilio;
         this.telefono = telefono;
         this.email = email;
+        this.password = password;
         this.estado = estado;
     }
 
@@ -75,11 +78,11 @@ public class Lector {
         this.domicilio = domicilio;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -91,16 +94,26 @@ public class Lector {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public boolean isEstado() {
         return estado;
     }
 
     public void setEstado(boolean estado) {
         this.estado = estado;
-    }
+    } 
 
-    
-    
+    @Override
+    public String toString() {
+        return "Nro Socio: " + nroSocio + ", Apellido y Nombre: " + apellido + "  " + nombre + ", DNI: " + dni;
+    }
     
     
 }

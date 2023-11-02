@@ -4,22 +4,19 @@ package biblioteca24.Entidades;
 public class Ejemplar {
     private int idEjemplar;
     private Libro libro;
-    private int cantEjemplar;
-    private boolean estado;
+    private EstadoEjemplar estado;
 
     public Ejemplar() {
     }
 
-    public Ejemplar(Libro libro, int cantEjemplar, boolean estado) {
+    public Ejemplar(Libro libro, EstadoEjemplar estado) {
         this.libro = libro;
-        this.cantEjemplar = cantEjemplar;
         this.estado = estado;
     }
 
-    public Ejemplar(int idEjemplar, Libro libro, int cantEjemplar, boolean estado) {
+    public Ejemplar(int idEjemplar, Libro libro, EstadoEjemplar estado) {
         this.idEjemplar = idEjemplar;
         this.libro = libro;
-        this.cantEjemplar = cantEjemplar;
         this.estado = estado;
     }
 
@@ -39,22 +36,11 @@ public class Ejemplar {
         this.libro = libro;
     }
 
-    public int getCantEjemplar() {
-        return cantEjemplar;
-    }
-
-    public void setCantEjemplar(int cantEjemplar) {
-        this.cantEjemplar = cantEjemplar;
-    }
-
-    public boolean isEstado() {
+    public EstadoEjemplar getEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(EstadoEjemplar estado) {
         this.estado = estado;
-    }
-    
-    
-    
+    }  
 }

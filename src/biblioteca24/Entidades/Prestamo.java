@@ -1,12 +1,13 @@
 
 package biblioteca24.Entidades;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Prestamo {
    
-    private Date fechaInicio;
-    private Date fechaFin;
+    private int idPrestamo;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
     private Ejemplar ejemplar;
     private Lector lector;
     private boolean estado;
@@ -14,7 +15,7 @@ public class Prestamo {
     public Prestamo() {
     }
 
-    public Prestamo(Date fechaInicio, Date fechaFin, Ejemplar ejemplar, Lector lector, boolean estado) {
+    public Prestamo(LocalDate fechaInicio, LocalDate fechaFin, Ejemplar ejemplar, Lector lector, boolean estado) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.ejemplar = ejemplar;
@@ -22,19 +23,36 @@ public class Prestamo {
         this.estado = estado;
     }
 
-    public Date getFechaInicio() {
+    public Prestamo(int idPrestamo, LocalDate fechaInicio, LocalDate fechaFin, Ejemplar ejemplar, Lector lector, boolean estado) {
+        this.idPrestamo = idPrestamo;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.ejemplar = ejemplar;
+        this.lector = lector;
+        this.estado = estado;
+    }
+
+    public int getIdPrestamo() {
+        return idPrestamo;
+    }
+
+    public void setIdPrestamo(int idPrestamo) {
+        this.idPrestamo = idPrestamo;
+    }
+
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 
@@ -61,6 +79,5 @@ public class Prestamo {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
     
 }

@@ -1,6 +1,7 @@
 
 package biblioteca24.Entidades;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Libro {
@@ -8,31 +9,34 @@ public class Libro {
     private int isbn;
     private String titulo;
     private String autor;
-    private int anio;
-    private String tipo;
+    private Categoria categoria;
     private String editorial;
-    private boolean estado;
-    
+    private int anio;
+    private int cantEjemplar;
+    private boolean disponible;
+
     public Libro() {
     }
 
-    public Libro(String titulo, String autor, int anio, String tipo, String editorial, boolean estado) {
+    public Libro(String titulo, String autor, Categoria categoria, String editorial, int anio, int cantEjemplar, boolean disponible) {
         this.titulo = titulo;
         this.autor = autor;
-        this.anio = anio;
-        this.tipo = tipo;
+        this.categoria = categoria;
         this.editorial = editorial;
-        this.estado = estado;
+        this.anio = anio;
+        this.cantEjemplar = cantEjemplar;
+        this.disponible = disponible;
     }
 
-    public Libro(int isbn, String titulo, String autor, int anio, String tipo, String editorial, boolean estado) {
+    public Libro(int isbn, String titulo, String autor, Categoria categoria, String editorial, int anio, int cantEjemplar, boolean disponible) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
-        this.anio = anio;
-        this.tipo = tipo;
+        this.categoria = categoria;
         this.editorial = editorial;
-        this.estado = estado;
+        this.anio = anio;
+        this.cantEjemplar = cantEjemplar;
+        this.disponible = disponible;
     }
 
     public int getIsbn() {
@@ -59,20 +63,12 @@ public class Libro {
         this.autor = autor;
     }
 
-    public int getAnio() {
-        return anio;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setAnio(int anio) {
-        this.anio = anio;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     public String getEditorial() {
@@ -83,12 +79,35 @@ public class Libro {
         this.editorial = editorial;
     }
 
-    public boolean isEstado() {
-        return estado;
+    public int getAnio() {
+        return anio;
     }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
-  
+
+    public int getCantEjemplar() {
+        return cantEjemplar;
+    }
+
+    public void setCantEjemplar(int cantEjemplar) {
+        this.cantEjemplar = cantEjemplar;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+    
+    @Override
+    public String toString() {
+        return "ISBN: " + isbn + ", Título: " + titulo + " Editorial: " + editorial;
+    }
+   
+    
 }
+ 

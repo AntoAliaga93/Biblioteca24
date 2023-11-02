@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/Entidades/Lector.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/accesoADatos/LibroData.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/accesoADatos/Conexion.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/Biblioteca24.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/Entidades/Libro.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/Entidades/Prestamo.java</file>
-            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/Entidades/Ejemplar.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/vistas/EditarEjemplar.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/accesoADatos/PrestamoData.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/vistas/AltaBajaL.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/vistas/Devolver.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/vistas/SolicitarEjemplar.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/vistas/EditarLibro.java</file>
+            <file>file:/D:/Mis%20documentos/Cursos/Argentina%20programa/Desarrollo%20de%20aplicaciones%20Java/Ejercicios/Guia4/Biblioteca24/src/biblioteca24/accesoADatos/EjemplarData.java</file>
         </group>
     </open-files>
 </project-private>
